@@ -231,6 +231,9 @@
                             <constraint firstAttribute="trailing" secondItem="HTm-IH-INL" secondAttribute="trailing" id="s5X-H1-WPe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLbl" destination="Sdj-hw-GLu" id="SlI-E2-AyM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
