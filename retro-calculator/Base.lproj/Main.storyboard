@@ -34,10 +34,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdj-hw-GLu">
                                 <rect key="frame" x="39" y="28" width="200" height="40"/>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="667-l6-boe">
-                                <rect key="frame" x="165" y="245" width="267" height="327"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="667-l6-boe" userLabel="keyPadStackView">
+                                <rect key="frame" x="167" y="76" width="267" height="327"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vlu-PG-IEO">
                                         <rect key="frame" x="0.0" y="0.0" width="258" height="61"/>
@@ -239,21 +240,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMp-fW-h3j">
-                                <rect key="frame" x="149" y="148" width="302" height="437"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S5R-01-X2w">
+                                <rect key="frame" x="149" y="134" width="302" height="438"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-5w-m1T">
-                                        <rect key="frame" x="0.0" y="0.0" width="302" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="61"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="5HU-MZ-FHR"/>
-                                            <constraint firstAttribute="width" constant="302" id="9ek-VP-6Ua"/>
+                                            <constraint firstAttribute="width" constant="302" id="KuP-7p-srp"/>
+                                            <constraint firstAttribute="height" constant="61" id="WGD-sh-FpF"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_scratchmarks" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-n3-yEb">
-                                        <rect key="frame" x="0.0" y="85" width="301" height="352"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-n3-yEb">
+                                        <rect key="frame" x="0.0" y="81" width="302" height="357"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="301" id="HM5-RC-b6n"/>
-                                            <constraint firstAttribute="height" constant="352" id="TVh-9o-wbr"/>
+                                            <constraint firstAttribute="width" constant="302" id="Yda-oR-exX"/>
+                                            <constraint firstAttribute="height" constant="357" id="toe-iP-eqB"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -261,15 +262,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HTm-IH-INL" secondAttribute="bottom" id="2X1-HJ-G8L"/>
-                            <constraint firstAttribute="trailing" secondItem="5nb-FL-b86" secondAttribute="trailing" id="Ivl-Dc-EzQ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5nb-FL-b86" secondAttribute="bottom" id="UgT-lJ-npe"/>
-                            <constraint firstItem="5nb-FL-b86" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VwI-Sf-q2Q"/>
-                            <constraint firstItem="5nb-FL-b86" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XhW-yY-dGm"/>
-                            <constraint firstAttribute="trailing" secondItem="HTm-IH-INL" secondAttribute="trailing" id="ZYv-Lc-tPa"/>
-                            <constraint firstItem="wMp-fW-h3j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oIF-7a-sUq"/>
-                            <constraint firstItem="HTm-IH-INL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="plx-ic-FJP"/>
-                            <constraint firstItem="wMp-fW-h3j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tiP-2P-Xz1"/>
+                            <constraint firstAttribute="trailing" secondItem="HTm-IH-INL" secondAttribute="trailing" id="2la-OA-rjT"/>
+                            <constraint firstItem="5nb-FL-b86" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jaj-g3-04C"/>
+                            <constraint firstItem="HTm-IH-INL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O6F-v1-BZ1"/>
+                            <constraint firstItem="S5R-01-X2w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T43-J8-ls1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5nb-FL-b86" secondAttribute="bottom" id="XCv-4I-xlc"/>
+                            <constraint firstAttribute="trailing" secondItem="5nb-FL-b86" secondAttribute="trailing" id="dLl-rh-LlF"/>
+                            <constraint firstItem="5nb-FL-b86" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f19-0z-3Fr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HTm-IH-INL" secondAttribute="bottom" id="f5f-UI-zDX"/>
+                            <constraint firstItem="S5R-01-X2w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m6n-8X-f5n"/>
                         </constraints>
                     </view>
                     <connections>
@@ -293,11 +294,11 @@
         <image name="8" width="111" height="114"/>
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
+        <image name="backpanel" width="620" height="938"/>
         <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
-        <image name="grey_scratchmarks" width="1300" height="1300"/>
         <image name="ground" width="888" height="72"/>
         <image name="multiply" width="111" height="114"/>
         <image name="space-bg" width="988" height="946"/>
