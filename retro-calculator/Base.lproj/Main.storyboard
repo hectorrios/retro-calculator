@@ -63,6 +63,9 @@
                                                     <constraint firstAttribute="width" constant="190" id="eoL-zF-GFO"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="clear"/>
+                                                <connections>
+                                                    <action selector="onClearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nov-ZP-cNc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqA-d2-eW1" userLabel="divideBtn">
                                                 <rect key="frame" x="203" y="0.0" width="63" height="61"/>

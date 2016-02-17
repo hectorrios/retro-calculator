@@ -89,6 +89,28 @@ class ViewController: UIViewController {
         processOperation(self.currentOperation)
     }
     
+    @IBAction func onClearBtnPressed(sender: UIButton) {
+        
+        //What do we need to do?
+        
+        //1. clear the current operation
+        self.currentOperation = Operation.Empty
+
+        //2. clear running number
+        self.runningNumber = ""
+        
+        //3. Set the output lbl to the running number
+        self.outputLbl.text = self.runningNumber
+        
+        //4. Clear out the right and left val operands
+        self.rightValStr = ""
+        self.leftValStr = ""
+        
+        //5. Clear the result value
+        self.result = ""        
+    }
+    
+    
     //MARK: private functions
     
     func processOperation(op: Operation) {
